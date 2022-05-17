@@ -12,6 +12,7 @@ html {
 
 .content-box {
     border: 1px solid black;
+    padding: 0.8rem;
 }
 
 /* Header styles */
@@ -41,6 +42,11 @@ nav a {
     height: 250px;
 }
 
+.main-image img {
+    max-height: 200px;
+    padding: 10px;
+}
+
 
 /* Main Content & Bio Styles */
 .main-content {
@@ -55,4 +61,10 @@ nav a {
 
 #bio h3 {
     text-align: center;
+}
+
+/* Footer Styles */
+footer h4 {
+    display: inline;
+    margin: 0 10px;
 }
