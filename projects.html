@@ -11,20 +11,26 @@
     
     <!-- Header & Navigation -->
     <header class="container">
-        <nav>
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./projects.html">Projects</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="content-box">    
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./projects.html">Projects</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <!-- Heading & Picture -->
     <main>
         <section class="container main-heading">
-            <div class="content-box">
+            <div class="content-box main-header-box">
                 <h1>Projects</h1>
+            </div>
+            <div class="content-box main-image">
+                <!-- Laita tähän kuva! -->
+                <img src="./resources/images/testikuva.jpg" alt="Juho Kalermo at his wedding">
             </div>
         </section>
 
@@ -33,9 +39,10 @@
             <div class="content-box" id="projects">
                 <div class="project">
                     <h2>Ice Breakers</h2>
-                    <p class="languages">Languages/modules: JavaScript</p>
+                    <p class="language">Languages/modules: JavaScript</p>
                     <h5>Description:</h5>
-                    <p><span class="project-name">Ice Breakers</span> generates a random question for you to ask during uncomfortable silences. Use at your own will.</p>
+                    <p><span class="project-name">Ice Breakers</span> generates a random question for you to ask during uncomfortable silences.</p>
+                    <p>Question forms from three arrays containing parts of the sentence. Project uses randomization and conditional statements to apply correct spelling.</p>
                     <h5>Try it out:</h5>
                     <div class="js-project" id="ice-breakers">
                         <button id="generate-ice-breaker">Generate Ice Breaker</button>
@@ -60,12 +67,13 @@
 
     <!-- Footer with contact links -->
     <footer class="container">
-        <h4>Linkit</h4>
-        <a href="">Github</a>
-        <a href="">LinkedIn</a>
+        <div class="content-box">
+            <h4>FIND ME</h4>
+            <a href="https://github.com/jpkaler"><img src="./resources/images/github_logo.png" alt="Github"></a>
+            <a href=""></a>
+        </div>
     </footer>
     <script src="./resources/scripts/ice-breakers/ice_breakers.js"></script>
-    <script src="./resources/scripts/main-script.js"></script>
 </body>
 </html>
 

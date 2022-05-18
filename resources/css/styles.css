@@ -1,5 +1,53 @@
+@font-face {
+    font-family: 'Domine';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/domine/v18/L0xhDFMnlVwD4h3Lt9JWnbX3jG-2X3LAE1ofFZOrS8WtKw.woff) format('woff');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/ubuntu/v20/4iCu6KVjbNBYlgoKej70l0miFYxn.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/ubuntu/v20/4iCv6KVjbNBYlgoC1CzjsGyNPYZvgw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/ubuntu/v20/4iCv6KVjbNBYlgoC1CzjsGyNPYZvgw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/ubuntu/v20/4iCv6KVjbNBYlgoC1CzjsGyNPYZvgw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+
+
 html {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Ubuntu', 'Helvetica', sans-serif;
     font-size: 16px;
     font-weight: 400;
 }
@@ -8,19 +56,17 @@ html {
     border: 1px solid black;
     padding: 0.8rem;
     margin: 20px 0;
+    background-color: #B7C8C2;
 }
 
 .content-box {
     border: 1px solid black;
     padding: 0.8rem;
+    background-color: #F9F6F0;
 }
 
 /* Header styles */
 
-nav {
-    position: relative;
-    right: 4%;
-}
 
 nav li {
     display: inline;
@@ -42,10 +88,21 @@ nav a {
     height: 250px;
 }
 
+.main-header-box {
+    min-width: 570px;
+}
+
 .main-image img {
     max-height: 200px;
     padding: 10px;
     display: none;
+}
+
+h1 {
+    font-family: 'Domine', 'Garamond', serif;
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
 }
 
 
@@ -54,6 +111,46 @@ nav a {
     display: grid;
     grid-template-columns: 7fr 3fr;
     column-gap: 10px;
+}
+
+.language {
+    font-style: italic;
+}
+
+h5 {
+    font-family: 'Helvetica';
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 3rem;
+    margin-bottom: 0.8rem;
+}
+
+#generate-ice-breaker {
+    padding: 5px;
+    background-color: azure;
+    border: 1px solid black;
+    border-radius: 5%;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+#generate-ice-breaker:hover {
+    background-color: rgb(188, 224, 224);
+    cursor: pointer;
+}
+
+#generate-ice-breaker:active {
+    background-color: white;
+    cursor: pointer;
+}
+
+#generated-ice-breaker-text {
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: inset 2px 2px gray;
+    padding: 10px;
+    max-width: 35%;
+
 }
 
 #bio {
@@ -65,6 +162,11 @@ nav a {
 }
 
 /* Footer Styles */
+footer .content-box {
+    display: flex;
+    align-items: center;
+}
+
 footer h4 {
     display: inline;
     margin: 0 10px;
