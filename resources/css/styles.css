@@ -56,7 +56,7 @@ html {
     border: 1px solid black;
     padding: 0.8rem;
     margin: 20px 0;
-    background-color: #B7C8C2;
+    background-color: #a1b152;
 }
 
 .content-box {
@@ -86,6 +86,8 @@ nav a {
     justify-content: space-around;
     align-items: center;
     height: 250px;
+    background-image: url('../images/heading_background.jpg');
+    background-size: cover;
 }
 
 .main-header-box {
@@ -113,7 +115,7 @@ h1 {
     column-gap: 10px;
 }
 
-.language {
+.language, .topic {
     font-style: italic;
 }
 
@@ -145,7 +147,7 @@ h5 {
 }
 
 #generated-ice-breaker-text {
-    background-color: white;
+    background-color: #ffffff;
     border: 1px solid black;
     box-shadow: inset 2px 2px gray;
     padding: 10px;
